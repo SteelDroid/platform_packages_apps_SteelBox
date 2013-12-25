@@ -1,0 +1,7 @@
+SteelBox
+========
+
+What is SteelBox?
+----------------
+SteelBox is a modified version of CMParts.  It contains fixes for the device that its included with, and designed to be easy to use, and catagorized so that the user doesnt spend a lot of time looking for the setting they want.  SteelBox has been compressed, optimized, and zipaligned to provide the best experience possible at the smallest size.
+
