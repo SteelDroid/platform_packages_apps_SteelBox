@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
     <CheckBoxPreference
         android:key="phone_goggles_work_filtered"
         android:title="@string/title_phone_goggles_work_filtered"

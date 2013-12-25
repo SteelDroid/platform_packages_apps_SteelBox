@@ -19,12 +19,20 @@
 
     <!-- General options -->
     <!-- Use string resources from soft-buttons menu to be not redundant -->
-    <PreferenceCategory android:title="@string/general_title">
-        <CheckBoxPreference android:key="pref_extend_pm_home"
+    <PreferenceCategory
+        android:title="@string/general_title">
+
+        <CheckBoxPreference
+            android:key="pref_extend_pm_home"
             android:title="@string/tablet_soft_buttons_home_title" />
-        <CheckBoxPreference android:key="pref_extend_pm_menu"
+
+        <CheckBoxPreference
+            android:key="pref_extend_pm_menu"
             android:title="@string/tablet_soft_buttons_menu_title" />
-        <CheckBoxPreference android:key="pref_extend_pm_back"
+
+        <CheckBoxPreference
+            android:key="pref_extend_pm_back"
             android:title="@string/tablet_soft_buttons_back_title" />
+
     </PreferenceCategory>
 </PreferenceScreen>

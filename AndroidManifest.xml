@@ -115,7 +115,8 @@
                 <category android:name="com.steel.steelbox.SHORTCUT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.LockscreenStyleActivity" android:label="@string/pref_lockscreen_stylecfg_title">
+        <activity android:name=".activities.LockscreenStyleActivity"
+                  android:label="@string/pref_lockscreen_stylecfg_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.steel.steelbox.SHORTCUT"/>
@@ -220,7 +221,8 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".activities.LightLevelsActivity">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation"
+                  android:name=".activities.LightLevelsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -306,7 +308,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:label="@string/widget_name" android:name=".provider.RenderFXWidgetProvider">
+        <receiver android:label="@string/widget_name"
+                  android:name=".provider.RenderFXWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>

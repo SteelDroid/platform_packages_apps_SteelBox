@@ -18,36 +18,54 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- General options -->
-    <PreferenceCategory android:key="pref_general_category"
-            android:title="@string/general_title">
-        <CheckBoxPreference android:key="pref_status_bar_bottom"
+    <PreferenceCategory
+        android:key="pref_general_category"
+        android:title="@string/general_title">
+
+        <CheckBoxPreference
+            android:key="pref_status_bar_bottom"
             android:title="@string/tablet_tweaks_sb_bottom_title"
             android:summary="@string/tablet_tweaks_sb_bottom_summary" />
-        <CheckBoxPreference android:key="pref_status_bar_dead_zone"
+
+        <CheckBoxPreference
+            android:key="pref_status_bar_dead_zone"
             android:title="@string/tablet_tweaks_status_bar_dead_zone_title"
             android:summary="@string/tablet_tweaks_status_bar_dead_zone_summary"
             android:dependency="pref_status_bar_bottom" />
-        <CheckBoxPreference android:key="pref_soft_buttons_left"
+
+        <CheckBoxPreference
+            android:key="pref_soft_buttons_left"
             android:title="@string/tablet_tweaks_soft_buttons_left_title"
             android:summary="@string/tablet_tweaks_soft_buttons_left_summary" />
-        <PreferenceScreen android:key="pref_soft_button_list"
+
+        <PreferenceScreen
+            android:key="pref_soft_button_list"
             android:title="@string/tablet_tweaks_soft_button_list_title">
-            <intent android:action="android.intent.action.MAIN"
+            <intent
+                android:action="android.intent.action.MAIN"
                 android:targetPackage="com.steel.steelbox"
                 android:targetClass="com.steel.steelbox.activities.TabletSoftButtonsActivity" />
+
         </PreferenceScreen>
     </PreferenceCategory>
 
     <!-- Interface options -->
-    <PreferenceCategory android:key="pref_interface_category"
+    <PreferenceCategory
+            android:key="pref_interface_category"
             android:title="@string/tablet_tweaks_interface_head">
-        <CheckBoxPreference android:key="pref_disable_lockscreen"
+
+        <CheckBoxPreference
+            android:key="pref_disable_lockscreen"
             android:title="@string/tablet_tweaks_disable_lockscreen_title"
             android:summary="@string/tablet_tweaks_disable_lockscreen_summary" />
-        <CheckBoxPreference android:key="pref_disable_fullscreen"
+
+        <CheckBoxPreference
+            android:key="pref_disable_fullscreen"
             android:title="@string/tablet_tweaks_disable_fullscreen_title"
             android:summary="@string/tablet_tweaks_disable_fullscreen_summary" />
-        <ListPreference android:key="pref_unhide_button"
+
+        <ListPreference
+            android:key="pref_unhide_button"
             android:dialogTitle="@string/tablet_tweaks_unhide_button_list_head"
             android:title="@string/tablet_tweaks_unhide_button_list_title"
             android:entries="@array/entries_unhide_button"
@@ -56,16 +74,22 @@
     </PreferenceCategory>
 
     <!-- Button options -->
-    <PreferenceCategory android:key="pref_button_category"
+    <PreferenceCategory
+            android:key="pref_button_category"
             android:title="@string/buttons_title">
-        <CheckBoxPreference android:key="pref_extend_pm"
+
+        <CheckBoxPreference
+            android:key="pref_extend_pm"
             android:title="@string/tablet_tweaks_extend_pm_title"
             android:summary="@string/tablet_tweaks_extend_pm_summary"
             android:defaultValue="true" />
-        <PreferenceScreen android:key="pref_extend_pm_list"
+
+        <PreferenceScreen
+            android:key="pref_extend_pm_list"
             android:title="@string/tablet_tweaks_extend_pm_list_title"
-            android:dependency="pref_extend_pm" >
-            <intent android:action="android.intent.action.MAIN"
+            android:dependency="pref_extend_pm">
+            <intent
+                android:action="android.intent.action.MAIN"
                 android:targetPackage="com.steel.steelbox"
                 android:targetClass="com.steel.steelbox.activities.TabletExtendPmActivity" />
         </PreferenceScreen>
