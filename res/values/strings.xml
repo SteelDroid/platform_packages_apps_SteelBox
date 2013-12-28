@@ -3,7 +3,7 @@
     <!-- Generic -->
     <string name="app_name">SteelBox</string>
 
-    <!--  Primary Screen Settings -->
+    <!-- Primary Screen Settings -->
     <string name="application_settings_title_head">Application</string>
     <string name="application_settings_title_subhead">Application settings</string>
     <string name="application_settings_summary_head">Application moving, install location, communication filtering</string>
@@ -28,7 +28,7 @@
     <string name="system_settings_title_subhead">System settings</string>
     <string name="system_settings_summary_head">System changelog, stats, update notifications</string>
 
-    <!--  Update Notifications -->
+    <!-- Update Notifications -->
     <string name="updatenotify_title">Update notifications</string>
     <string name="updatenotify_summary">Get push notifications of updates</string>
 
@@ -499,7 +499,7 @@
     <string name="pref_render_effect_blue">Blue</string>
     <string name="pref_render_effect_amber">Amber</string>
     <string name="pref_render_effect_salmon">Salmon</string>
-    <string name="pref_render_effect_fuscia">Fuscia</string>
+    <string name="pref_render_effect_fuscia">Fuchsia</string>
     <string name="pref_render_effect_calibrated">Calibrated (N1)</string>
     <string name="pref_render_effect_calibrated_red">Calibrated (N1) Low Red</string>
     <string name="pref_render_effect_calibrated_cool">Calibrated (N1) Cool</string>
@@ -511,7 +511,7 @@
     <string name="widget_render_effect_blue">Blue</string>
     <string name="widget_render_effect_amber">Amber</string>
     <string name="widget_render_effect_salmon">Salmon</string>
-    <string name="widget_render_effect_fuscia">Fuscia</string>
+    <string name="widget_render_effect_fuscia">Fuchsia</string>
     <string name="widget_render_effect_red">Red</string>
     <string name="widget_render_effect_calibrated">Cal</string>
     <string name="widget_render_effect_calibrated_red">Cal Low Red</string>
@@ -540,8 +540,8 @@
     <string name="title_toggle_brightness">Toggle Brightness</string>
     <string name="title_toggle_sync">Toggle Sync</string>
     <string name="title_toggle_wifiap">Toggle Wifi AP</string>
-    <string name="title_toggle_screentimeout">Toggle Screentimeout</string>
-    <string name="title_toggle_mobiledata">Toggle Mobiledata</string>
+    <string name="title_toggle_screentimeout">Toggle Screen Timeout</string>
+    <string name="title_toggle_mobiledata">Toggle Mobile Data</string>
     <string name="title_toggle_lockscreen">Toggle Lockscreen</string>
     <string name="title_toggle_networkmode">Toggle 2G/3G</string>
     <string name="title_toggle_autorotate">Toggle Orientation</string>
@@ -558,7 +558,7 @@
     <string name="cm_brightness_mode_auto">Auto</string>
     <string name="cm_brightness_mode_dim">Dim</string>
     <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_network_mode_summary">Choose how the NetworkMode button changes modes</string>
+    <string name="pref_network_mode_summary">Choose how the Network Mode button changes modes</string>
     <string name="pref_screentimeout_mode_title">Screentimeout modes</string>
     <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
@@ -569,6 +569,8 @@
     <string name="cm_sound_mode_soundVibrate">Sound+Vibrate</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
+    <string name="pref_mobiledatanetwork_mode_title">Mobile Data auto 2G/3G</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Mobile Data button toggles 2G/3G mode</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatic backlight</string>

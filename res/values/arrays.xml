@@ -22,7 +22,7 @@
         <item>12</item>
         <item>15</item>
     </string-array>
-  
+
     <string-array name="entries_heapsize">
         <item>12m</item>
         <item>16m</item>
@@ -222,7 +222,7 @@
         <item>1s</item>
         <item>5s</item>
         <item>10s</item>
-        <item>15s</item>  
+        <item>15s</item>
         <item>30s</item>
         <item>1m</item>
         <item>5m</item>
@@ -428,8 +428,8 @@
     </string-array>
 
     <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>  
-        <item>2G/3G Only</item>   
+        <item>2G/3G+2G</item>
+        <item>2G/3G Only</item>
         <item>2G/3G Only/3G+2G</item>
     </string-array>
 
@@ -469,6 +469,16 @@
     </string-array>
 
     <string-array name="values_flash_widget" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="entries_mobiledatanetwork_widget">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="values_mobiledatanetwork_widget" translatable="false">
         <item>0</item>
         <item>1</item>
     </string-array>
