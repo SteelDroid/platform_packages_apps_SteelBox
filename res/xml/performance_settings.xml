@@ -62,5 +62,13 @@
             android:entries="@array/entries_heapsize"
             android:entryValues="@array/values_heapsize" />
 
+        <ListPreference
+            android:key="pref_max_events"
+            android:dialogTitle="@string/pref_max_events_title"
+            android:title="@string/pref_max_events_title"
+            android:summary="@string/pref_max_events_summary"
+            android:entries="@array/entries_max_events"
+            android:entryValues="@array/entries_max_events" />
+
     </PreferenceCategory>
 </PreferenceScreen>
