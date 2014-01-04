@@ -19,7 +19,6 @@ package com.steel.steelbox.utils;
 import com.steel.steelbox.R;
 
 import android.content.Context;
-import android.net.wimax.WimaxHelper;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -51,7 +50,6 @@ public class PowerWidgetUtil {
     public static final String BUTTON_MEDIA_PLAY_PAUSE = "toggleMediaPlayPause";
     public static final String BUTTON_MEDIA_PREVIOUS = "toggleMediaPrevious";
     public static final String BUTTON_MEDIA_NEXT = "toggleMediaNext";
-    public static final String BUTTON_WIMAX = "toggleWimax";
 
     public static final HashMap<String, ButtonInfo> BUTTONS = new HashMap<String, ButtonInfo>();
     static {
@@ -91,8 +89,6 @@ public class PowerWidgetUtil {
                 BUTTON_MEDIA_PLAY_PAUSE, R.string.title_toggle_media_play_pause, "com.android.systemui:drawable/stat_media_play"));
         BUTTONS.put(BUTTON_MEDIA_NEXT, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_MEDIA_NEXT, R.string.title_toggle_media_next, "com.android.systemui:drawable/stat_media_next"));
-        BUTTONS.put(BUTTON_WIMAX, new PowerWidgetUtil.ButtonInfo(
-                BUTTON_WIMAX, R.string.title_toggle_wimax, "com.android.systemui:drawable/stat_wimax_on"));
     }
 
     private static final String BUTTON_DELIMITER = "|";
@@ -105,10 +101,6 @@ public class PowerWidgetUtil {
         String buttons = Settings.System.getString(context.getContentResolver(), Settings.System.WIDGET_BUTTONS);
         if (buttons == null) {
             buttons = BUTTONS_DEFAULT;
-            // Add the WiMAX button if it's supported
-            if (WimaxHelper.isWimaxSupported(context)) {
-                buttons += BUTTON_DELIMITER + BUTTON_WIMAX;
-            }
             // And the flashlight too if available
             if (context.getResources().getBoolean(R.bool.has_led_flash)) {
                 buttons += BUTTON_DELIMITER + BUTTON_FLASHLIGHT;
