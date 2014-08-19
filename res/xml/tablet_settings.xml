@@ -33,66 +33,18 @@
             android:summary="@string/tablet_tweaks_status_bar_dead_zone_summary"
             android:dependency="pref_status_bar_bottom" />
 
-        <CheckBoxPreference
-            android:key="pref_soft_buttons_left"
-            android:title="@string/tablet_tweaks_soft_buttons_left_title"
-            android:summary="@string/tablet_tweaks_soft_buttons_left_summary" />
-
-        <PreferenceScreen
-            android:key="pref_soft_button_list"
-            android:title="@string/tablet_tweaks_soft_button_list_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.steel.steelbox"
-                android:targetClass="com.steel.steelbox.activities.TabletSoftButtonsActivity" />
-
-        </PreferenceScreen>
     </PreferenceCategory>
 
     <!-- Interface options -->
     <PreferenceCategory
-            android:key="pref_interface_category"
-            android:title="@string/tablet_tweaks_interface_head">
+        android:key="pref_interface_category"
+        android:title="@string/tablet_tweaks_interface_head">
 
         <CheckBoxPreference
             android:key="pref_disable_lockscreen"
             android:title="@string/tablet_tweaks_disable_lockscreen_title"
             android:summary="@string/tablet_tweaks_disable_lockscreen_summary" />
 
-        <CheckBoxPreference
-            android:key="pref_disable_fullscreen"
-            android:title="@string/tablet_tweaks_disable_fullscreen_title"
-            android:summary="@string/tablet_tweaks_disable_fullscreen_summary" />
-
-        <ListPreference
-            android:key="pref_unhide_button"
-            android:dialogTitle="@string/tablet_tweaks_unhide_button_list_head"
-            android:title="@string/tablet_tweaks_unhide_button_list_title"
-            android:entries="@array/entries_unhide_button"
-            android:entryValues="@array/values_unhide_button"
-            android:dependency="pref_disable_fullscreen" />
     </PreferenceCategory>
 
-    <!-- Button options -->
-    <PreferenceCategory
-            android:key="pref_button_category"
-            android:title="@string/buttons_title">
-
-        <CheckBoxPreference
-            android:key="pref_extend_pm"
-            android:title="@string/tablet_tweaks_extend_pm_title"
-            android:summary="@string/tablet_tweaks_extend_pm_summary"
-            android:defaultValue="true" />
-
-        <PreferenceScreen
-            android:key="pref_extend_pm_list"
-            android:title="@string/tablet_tweaks_extend_pm_list_title"
-            android:dependency="pref_extend_pm">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.steel.steelbox"
-                android:targetClass="com.steel.steelbox.activities.TabletExtendPmActivity" />
-        </PreferenceScreen>
-
-    </PreferenceCategory>
 </PreferenceScreen>

@@ -22,9 +22,9 @@
                 <action android:name="android.app.NotificationManager.ACTION_NOTIFY" />
             </intent-filter>
         </receiver>
-         <activity android:name=".activities.MainActivity" android:label="@string/app_name">
+        <activity android:name=".activities.MainActivity" android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -116,10 +116,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.LockscreenStyleActivity"
-                  android:label="@string/pref_lockscreen_stylecfg_title">
+            android:label="@string/pref_lockscreen_stylecfg_title">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="com.steel.steelbox.SHORTCUT"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.steel.steelbox.SHORTCUT" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.LockscreenWidgetsActivity"
@@ -157,27 +157,6 @@
                 <category android:name="com.steel.steelbox.SHORTCUT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.TabletSoftButtonsActivity"
-            android:label="@string/tablet_tweaks_soft_buttons_list_head">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.steel.steelbox.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activities.TabletExtendPmActivity"
-            android:label="@string/tablet_tweaks_extend_pm_list_head">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.steel.steelbox.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activities.TabletInputActivity"
-            android:label="@string/tablet_tweaks_input_head">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.steel.steelbox.SHORTCUT" />
-            </intent-filter>
-        </activity>
         <activity android:name=".activities.LongPressHomeActivity"
             android:label="@string/long_press_home_title">
             <intent-filter>
@@ -200,7 +179,7 @@
         <activity android:name=".activities.CPUActivity"
             android:label="@string/cpu_settings_title">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.HapticTweaksActivity"
@@ -222,7 +201,7 @@
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|orientation"
-                  android:name=".activities.LightLevelsActivity">
+            android:name=".activities.LightLevelsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -309,7 +288,7 @@
         </activity>
 
         <receiver android:label="@string/widget_name"
-                  android:name=".provider.RenderFXWidgetProvider">
+            android:name=".provider.RenderFXWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
